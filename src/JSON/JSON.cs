@@ -1,7 +1,7 @@
 using System.IO;
 using System.Text.Json;
 
-namespace jsudar.DotNet.JSON
+namespace jmsudar.DotNet.JSON
 {
     /// <summary>
     /// Method for serializing and deserializing JSON
