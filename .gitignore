@@ -4,6 +4,20 @@
 [Ll]ogs/
 [Pp]ackages/
 [Tt]est[Rr]esults/
+.vs/
+
+# OS specific files
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+Desktop.ini
+# Linux
+.directory
+.*.sw?
+.bash_history
+# Temporary files
+*~
 
 # Generated files
 *.user
