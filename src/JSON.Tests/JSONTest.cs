@@ -1,6 +1,6 @@
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using jsudar.DotNet.JSON;
+using jmsudar.DotNet.JSON;
 
 [TestClass]
 public class JsonMethodsTests
