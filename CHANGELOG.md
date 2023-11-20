@@ -1,5 +1,9 @@
 # Changelog
 
+### PR-8
+
+Adds several `pragma warning disable` and `restore` commands wrapping the unit test file to clean up unneeded warnings regarding potential null types that are the target of the tests themselves.
+
 ### PR-7
 
 Updates all references from `DotNet.JSON` to `DotNet.Json` to be in better keeping with .NET namespace best practices.
