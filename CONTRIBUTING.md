@@ -1,6 +1,6 @@
-# Contributing to jmsudar.DotNet.JSON
+# Contributing to jmsudar.DotNet.Json
 
-Thank you for considering contributing to jmsudar.DotNet.JSON! Any contributions you make are greatly appreciated.
+Thank you for considering contributing to jmsudar.DotNet.Json! Any contributions you make are greatly appreciated.
 
 ## Code of Conduct
 
@@ -8,11 +8,11 @@ A formal code of conduct is in development. In the short term: don't be an assho
 
 ## How can I contribute?
 
-Contributions are welcome, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests, or writing code which can be incorporated into jmsudar.DotNet.JSON itself.
+Contributions are welcome, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests, or writing code which can be incorporated into jmsudar.DotNet.Json itself.
 
 ## Reporting Bugs
 
-This section guides you through submitting a bug report for jmsudar.DotNet.JSON. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
+This section guides you through submitting a bug report for jmsudar.DotNet.Json. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 ### Before Submitting A Bug Report:
 
@@ -32,7 +32,7 @@ Bugs are tracked as [GitHub issues](https://github.com/jmsudar/DotNet-JSON/issue
 
 ## Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for jmsudar.DotNet.JSON, including completely new features and minor improvements to existing functionality.
+This section guides you through submitting an enhancement suggestion for jmsudar.DotNet.Json, including completely new features and minor improvements to existing functionality.
 
 ### Before Submitting An Enhancement Suggestion:
 
@@ -46,4 +46,4 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/jmsuda
 - Provide a step-by-step description of the suggested enhancement in as much detail as possible.
 - Provide specific examples to demonstrate the steps.
 - Describe the current behavior and explain which behavior you expected to see instead and why.
-- Explain why this enhancement would be useful to most jmsudar.DotNet.JSON users.
+- Explain why this enhancement would be useful to most jmsudar.DotNet.Json users.

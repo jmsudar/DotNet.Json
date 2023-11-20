@@ -1,6 +1,6 @@
-# jmsudar.DotNet.JSON
+# jmsudar.DotNet.Json
 
-jmsudar.DotNet.JSON is a .NET library providing efficient and easy-to-use JSON serialization and deserialization methods with no external third-party dependencies.
+jmsudar.DotNet.Json is a .NET library providing efficient and easy-to-use JSON serialization and deserialization methods with no external third-party dependencies.
 
 ## Features
 - Fast and lightweight JSON serialization and deserialization.
@@ -12,10 +12,10 @@ jmsudar.DotNet.JSON is a .NET library providing efficient and easy-to-use JSON s
 
 ### Installation
 
-To install the jmsudar.DotNet.JSON library, use the following NuGet command:
+To install the jmsudar.DotNet.Json library, use the following NuGet command:
 
 ```
-dotnet add package jmsudar.DotNet.JSON
+dotnet add package jmsudar.DotNet.Json
 ```
 
 Alternately, find the file through the NuGet explorer in Visual Studio or similar.
@@ -26,7 +26,7 @@ Here's a quick example to get you started:
 
 ```
 using System;
-using jmsudar.DotNet.JSON;
+using jmsudar.DotNet.Json;
 
 public class Program
 {

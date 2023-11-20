@@ -1,7 +1,7 @@
 using System.Text;
 using System.Text.Json;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using jmsudar.DotNet.JSON;
+using jmsudar.DotNet.Json;
 
 /// <summary>
 /// Methods for testing JSON serialization and deserialization
@@ -14,7 +14,7 @@ public class JsonMethodsTests
     /// </summary>
     public class TestObject
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int? Value { get; set; }
     }
 
