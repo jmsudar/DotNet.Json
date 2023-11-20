@@ -18,6 +18,11 @@ public class JsonMethodsTests
         public int? Value { get; set; }
     }
 
+#pragma warning disable CS8600 // Suppressing CS8600
+#pragma warning disable CS8602 // Suppressing CS8602
+#pragma warning disable CS8603 // Suppressing CS8603
+#pragma warning disable CS8629 // Suppressing CS8629
+
     /// <summary>
     /// Tests Serialize method for returning valid JSON
     /// </summary>
@@ -233,4 +238,9 @@ public class JsonMethodsTests
             File.Delete(tempFilePath);
         }
     }
+
+#pragma warning restore CS8600 // Suppressing CS8600
+#pragma warning restore CS8602 // Suppressing CS8602
+#pragma warning restore CS8603 // Suppressing CS8603
+#pragma warning restore CS8629 // Suppressing CS8629
 }
