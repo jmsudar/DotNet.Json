@@ -1,5 +1,9 @@
 # Changelog
 
+### PR-9
+
+Simple update to version number, `1.0.0` => `1.1.0`
+
 ### PR-8
 
 Adds several `pragma warning disable` and `restore` commands wrapping the unit test file to clean up unneeded warnings regarding potential null types that are the target of the tests themselves.
