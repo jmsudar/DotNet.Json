@@ -1,5 +1,13 @@
 # Changelog
 
+### PR-7
+
+Updates all references from `DotNet.JSON` to `DotNet.Json` to be in better keeping with .NET namespace best practices.
+
+Updates nullability in the Deserialize method to address an remove warnings at build time.
+
+Creates `CHANGELOG.md`.
+
 ### PR-6
 
 Adds path for NuGet to find README.
