@@ -1,6 +1,7 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
-namespace jmsudar.DotNet.JSON
+namespace jmsudar.DotNet.Json
 {
     /// <summary>
     /// Method for serializing and deserializing JSON
@@ -18,7 +19,7 @@ namespace jmsudar.DotNet.JSON
             JsonSerializer.Serialize(toSerialize, new JsonSerializerOptions()
             {
                 WriteIndented = prettify,
-                IgnoreNullValues = excludeNullFields
+                DefaultIgnoreCondition = excludeNullFields ? JsonIgnoreCondition.WhenWritingNull : JsonIgnoreCondition.Never
             });
 
         /// <summary>
@@ -30,7 +31,7 @@ namespace jmsudar.DotNet.JSON
         public static byte[] SerializeToBytes(object toSerialize, bool excludeNullFields = false) =>
             JsonSerializer.SerializeToUtf8Bytes(toSerialize, new JsonSerializerOptions()
             {
-                IgnoreNullValues = excludeNullFields
+                DefaultIgnoreCondition = excludeNullFields ? JsonIgnoreCondition.WhenWritingNull : JsonIgnoreCondition.Never
             });
 
         /// <summary>
@@ -41,7 +42,7 @@ namespace jmsudar.DotNet.JSON
         /// <param name="caseInsensitive">Toggles case-insensitivity, defaults to true</param>
         /// <param name="allowTrailingCommas">Toggles trailing comma allowance, defaults to true</param>
         /// <returns>The object representation of the JSON string</returns>
-        public static T Deserialize<T>(string toDeserialize, bool caseInsensitive = true, bool allowTrailingCommas = true) =>
+        public static T? Deserialize<T>(string toDeserialize, bool caseInsensitive = true, bool allowTrailingCommas = true) =>
             JsonSerializer.Deserialize<T>(toDeserialize, new JsonSerializerOptions()
             {
                 PropertyNameCaseInsensitive = caseInsensitive,
@@ -56,7 +57,7 @@ namespace jmsudar.DotNet.JSON
         /// <param name="caseInsensitive">Toggles case-insensitivity, defaults to true</param>
         /// <param name="allowTrailingCommas">Toggles trailing comma allowance, defaults to true</param>
         /// <returns>The object representation of the JSON string's byte array</returns>
-        public static T Deserialize<T>(byte[] toDeserialize, bool caseInsensitive = true, bool allowTrailingCommas = true) =>
+        public static T? Deserialize<T>(byte[] toDeserialize, bool caseInsensitive = true, bool allowTrailingCommas = true) =>
             JsonSerializer.Deserialize<T>(toDeserialize, new JsonSerializerOptions()
             {
                 PropertyNameCaseInsensitive = caseInsensitive,
