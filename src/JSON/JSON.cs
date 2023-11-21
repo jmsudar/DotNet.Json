@@ -74,7 +74,7 @@ namespace jmsudar.DotNet.Json
         /// <exception cref="JsonException">Thrown when the file content is not in a valid JSON format</exception>
         /// <exception cref="UnauthorizedAccessException">Thrown when the caller does not have the required permission</exception>
         /// <exception cref="Exception">General exceptions for other issues, such as I/O errors</exception>
-        public static T DeserializeFromFile<T>(string filePath)
+        public static T? DeserializeFromFile<T>(string filePath)
         {
             if (!File.Exists(filePath))
             {

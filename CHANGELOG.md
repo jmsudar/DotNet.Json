@@ -1,5 +1,11 @@
 # Changelog
 
+### PR-10
+
+Adds nullability to generic return type in `DeserializeFromFile` method to address warning `CS8603`.
+
+Updates version, `1.1.0` => `1.2.0`
+
 ### PR-9
 
 Simple update to version number, `1.0.0` => `1.1.0`
