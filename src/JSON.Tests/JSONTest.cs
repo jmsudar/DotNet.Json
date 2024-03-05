@@ -81,7 +81,7 @@ public class JsonMethodsTests
     }
 
     /// <summary>
-    /// Tests serializing an object to UTF-8 bytes while excluding a null field
+    /// Tests serializing an object to UTF-8 bytes, while excluding a null field
     /// </summary>
     [TestMethod]
     public void SerializeToBytes_WithExcludeNullFields_ExcludesNulls()
