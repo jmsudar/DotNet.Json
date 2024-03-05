@@ -18,7 +18,7 @@ To install the jmsudar.DotNet.Json library, use the following NuGet command:
 dotnet add package jmsudar.DotNet.Json
 ```
 
-Alternately, find the file through the NuGet explorer in Visual Studio or similar.
+Alternately, find the file through the NuGet explorer in Visual Studio.
 
 ## Usage
 
