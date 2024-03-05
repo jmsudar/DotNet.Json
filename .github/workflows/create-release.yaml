@@ -1,4 +1,4 @@
-name: Create Release
+name: CD - Tag, Changelog, Create Release
 
 on:
   push:
@@ -11,11 +11,24 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+
+    - name: Bump Version
+      id: bump_version
+      uses: anothrNick/github-tag-action@1.26.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BUMP: minor
+        RELEASE_BRANCHES: main
 
     - name: Create Release
       uses: ncipollo/release-action@v1.14.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        name: Release ${{ github.sha }}
-        tag: ${{ github.sha }}
+        name: Release ${{ steps.bump_version.outputs.new_tag }}
+        tag: ${{ steps.bump_version.outputs.new_tag }}
+    
+    - name: Push Tag
+      run: |
+        git tag ${{ steps.bump_version.outputs.new_tag }}
+        git push origin ${{ steps.bump_version.outputs.new_tag }}
