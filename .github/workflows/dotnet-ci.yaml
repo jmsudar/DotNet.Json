@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: Run .NET CI Action
         uses: jmsudar/dotnet-continuous-integration@main
+        with:
+          working-directory: '.'
         
