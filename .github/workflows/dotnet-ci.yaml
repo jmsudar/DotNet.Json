@@ -5,5 +5,8 @@ on:
 
 jobs:
   build-and-test:
-    secrets: inherit
-    uses: jmsudar/dotnet-continuous-integration@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run .NET CI Action
+        uses: jmsudar/dotnet-continuous-integration@main
+        
