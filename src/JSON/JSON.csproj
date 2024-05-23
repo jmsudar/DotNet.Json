@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>jmsudar.DotNet.Json</PackageId>
-    <Version>1.2.0</Version>
-    <Authors>JM Sudar</Authors>
+    <Version>1.4.0</Version>
+    <Authors>JMSudar</Authors>
     <Description>A utility library for JSON serialization and deserialization.</Description>
     <PackageTags>json;serialization;deserialization</PackageTags>
     <RepositoryUrl>https://github.com/jmsudar/DotNet-Json</RepositoryUrl>
